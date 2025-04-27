@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.19"
+  },
+  "name": "sol_chain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
+    "mocha": "^10.8.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
