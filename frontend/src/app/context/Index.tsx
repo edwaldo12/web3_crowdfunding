@@ -35,7 +35,9 @@ export const WalletProvider: React.FC<React.PropsWithChildren> = ({
   const [signer, setSigner] = useState<JsonRpcSigner | null>(null);
   const [contract, setContract] = useState<Contract | null>(null);
 
-  const factoryAddress = '0xEba34f201fdc8E241376E576D64B6c8a2bb0A49a';
+  const factoryAddress =
+    process.env.NEXT_PUBLIC_CONTRACT_ADDRESS ||
+    '0xEba34f201fdc8E241376E576D64B6c8a2bb0A49a';
 
   const connectWallet = useCallback(async () => {
     if (!window?.ethereum) {
